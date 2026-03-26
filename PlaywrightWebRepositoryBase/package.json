@@ -1,0 +1,28 @@
+{
+  "name": "frameworkpruebasautomatizadas-fe-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env cucumber-js test",
+    "test:failed": "cucumber-js test -p rerun @rerun.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.10.6",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "multiple-cucumber-html-reporter": "^3.6.0",
+    "ts-node": "^10.9.2",
+    "winston": "^3.11.0"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "frameworkpruebasautomatizadas-fe-playwright": "file:",
+    "minimist": "^1.2.8"
+  }
+}

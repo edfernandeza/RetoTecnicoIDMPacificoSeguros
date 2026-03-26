@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "typeRoots": [
+            "./node_modules/@types",
+            "src/types/types"
+        ],
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    }
+}

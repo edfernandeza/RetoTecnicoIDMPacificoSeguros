@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<testsuite failures="0" skipped="0" name="cucumber-js" time="4.961239987999999" tests="3">
+  <testcase classname="Compra de productos en Swag Labs" name="Usuario Compra un producto exitosamente" time="3.9316740919999997">
+    <system-out><![CDATA[Given Usuario ingresa a la pagina de Swag Labs............................passed
+When Usuario ingresa con el usuario standard_user.........................passed
+Then Se valida casuistica de login del usuario standard_user..............passed
+When Usuario agrega los productos [Sauce Labs Backpack, Sauce Labs Bike...passed
+Then Valida productos en el carrito de compras............................passed
+When Usuario realiza checkout con los datos...............................passed
+Then Se valida que la compra se haya realizado exitosamente...............passed]]></system-out>
+  </testcase>
+  <testcase classname="Login" name="login exitoso" time="0.5307098969999999">
+    <system-out><![CDATA[Given Usuario ingresa a la pagina de Swag Labs............................passed
+When Usuario ingresa con el usuario standard_user.........................passed
+Then Se valida casuistica de login del usuario standard_user..............passed]]></system-out>
+  </testcase>
+  <testcase classname="Login" name="login no exitoso" time="0.498855999">
+    <system-out><![CDATA[Given Usuario ingresa a la pagina de Swag Labs............................passed
+When Usuario ingresa con el usuario locked_out_user.......................passed
+Then Se valida casuistica de login del usuario locked_out_user............passed]]></system-out>
+  </testcase>
+</testsuite>

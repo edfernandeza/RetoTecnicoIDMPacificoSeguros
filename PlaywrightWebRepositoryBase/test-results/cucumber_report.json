@@ -1,0 +1,320 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "compra-de-productos-en-swag-labs;usuario-compra-un-producto-exitosamente",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Usuario Compra un producto exitosamente",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 204520700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Usuario ingresa a la pagina de Swag Labs",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 259739799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Usuario ingresa con el usuario standard_user",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125008699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Se valida casuistica de login del usuario standard_user",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12216699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Usuario agrega los productos [Sauce Labs Backpack, Sauce Labs Bike Light] al carrito de compras",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3083241898
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Valida productos en el carrito de compras",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45317500
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Nombre",
+                      "Apellido",
+                      "CodigoPostal"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Juan",
+                      "Perez",
+                      "12345"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 10,
+            "name": "Usuario realiza checkout con los datos",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133547198
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Se valida que la compra se haya realizado exitosamente",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41591399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26490200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CompraExitosa",
+            "line": 3
+          },
+          {
+            "name": "@Regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "compra-de-productos-en-swag-labs",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Compra de productos en Swag Labs",
+    "tags": [],
+    "uri": "tests\\features\\compra.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;login-exitoso",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "login exitoso",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121376800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Usuario ingresa a la pagina de Swag Labs",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 269163598
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Usuario ingresa con el usuario standard_user",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107946000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Se valida casuistica de login del usuario standard_user",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2809099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29414400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginExitoso",
+            "line": 3
+          },
+          {
+            "name": "@Regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-no-exitoso",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "login no exitoso",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 124766700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "Usuario ingresa a la pagina de Swag Labs",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 274568700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "Usuario ingresa con el usuario locked_out_user",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65609499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Se valida casuistica de login del usuario locked_out_user",
+            "match": {
+              "location": "tests\\steps\\loginSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3335000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30576100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@failed",
+            "line": 12
+          },
+          {
+            "name": "@Regression",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "tests\\features\\login.feature"
+  }
+]
