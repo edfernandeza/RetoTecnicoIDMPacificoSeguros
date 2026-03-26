@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"0bd19496-aa62-4148-95ac-4c87992de6f8",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.anyPersonalLoansLimits</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-03-26 06:31:55 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>Obtener Cuotas Exitosamente</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/anyPersonalLoansLimits.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Autorizacion de Endpoints de Seguros</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">esc1</a><a class="badge badge-primary" href="karate-tags.html">sebastian</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">Obtener Cuotas Exitosamente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1043</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def endpoint = &quot;https://integracion-bfcl-qa.fif.tech/parameters-management/v1/loans/limits&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authorizationFeature = callonce read(&#39;classpath:Features/getTokenAuth.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">887</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">06:31:54.848 &lt;&lt; lock released, cached callonce: read(&#39;classpath:Features/getTokenAuth.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Features.getTokenAuth</div>
+      </div>
+      <div class="time-cell passed">865</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def endpoint = &quot;https://serverest.dev/login&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.1.4">06:31:53.971 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:Features/getTokenAuth.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenSchema = call read(&#39;classpath:Schemas/login.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestLogin = read(&#39;classpath:/Data/login/login.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">26</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url endpoint</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request {&quot;email&quot;: &quot;fulano@qa.com&quot;, &quot;password&quot;: &quot;teste&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">815</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.1.11">06:31:54.215 request:
+1 &gt; POST https://serverest.dev/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 44
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;fulano@qa.com&quot;,&quot;password&quot;:&quot;teste&quot;}
+
+06:31:54.830 response time in milliseconds: 612
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: ae743ff693ab1b9804c271d99c592dea;o=1
+1 &lt; date: Thu, 26 Mar 2026 11:31:58 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 265
+{
+    &quot;message&quot;: &quot;Login realizado com sucesso&quot;,
+    &quot;authorization&quot;: &quot;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNzc0NTI0NzE4LCJleHAiOjE3NzQ1MjUzMTh9.lQYhaMnKS22cpJrc7P3wt5Pzqs_ZEDXPLnosFls8MB4&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == tokenSchema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>console.log(&quot;HOLA SEBAS:&quot; + authorizationFeature.accessToken)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Authorization = &#39;Bearer &#39; + authorizationFeature.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>console.log(&quot;HOLA TOLE:&quot; + Authorization)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url endpoint</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>param Type = 2001</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers { &quot;X-Country&quot;: &quot;CL&quot;, &quot;X-Channel&quot;: &quot;SMARTIX&quot;, &quot;X-Commerce&quot;: &quot;FALABELLA&quot;, &quot;X-Session-Id&quot;: &quot;852910FE8FG64A18E17E146A9BD5917F&quot;, &quot;X-Functionality&quot;: &quot;CREDITO_CONSUMO&quot;, &quot;X-True-Client-Ip&quot;: &quot;190.251.23.5&quot;, &quot;X-Date-Time&quot;: &quot;2006-01-02T15:04:05-00:00&quot;, &quot;X-Trace-Id&quot;: &quot;32d440a3-f7cb-4dcf-8b18-2493e206ab61&quot;, &quot;X-App-Version&quot;: &quot;1.15.0&quot;, &quot;X-App-Platform&quot;: &quot;Android OS&quot;, &quot;X-Customer-Hash&quot;: &quot;CL_RUT_b1CCee99996d0b84ab1a23279c6ee411960ec9809f6169dbc1b081614a94511C&quot;, &quot;X-Forwarded-Proto&quot;: &quot;https&quot;, &quot;X-Forwarded-For&quot;: &quot;190.251.23.5,10.185.125.31&quot;, &quot;X-Forwarded-Host&quot;: &quot;gateway-api-cl-gcp-sawest-1-preprod-chile-xzcfss.bfcl-np-gcp-alfa-sawest1-prod.fif.tech&quot;, &quot;X-Forwarded-Port&quot;: &quot;443&quot;, &quot;X-Request-Id&quot;: &quot;88eb4ad4-e4c6-4d87-9209-4e107fddeabe&quot;, &quot;X-Branch&quot;: &quot;170&quot;, &quot;X-Customer-Id&quot;: &quot;115946145&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers { &quot;Authorization&quot;: &quot;#(Authorization)&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">134</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">06:31:54.864 request:
+1 &gt; GET https://integracion-bfcl-qa.fif.tech/parameters-management/v1/loans/limits?Type=2001
+1 &gt; X-Country: CL
+1 &gt; X-Channel: SMARTIX
+1 &gt; X-Commerce: FALABELLA
+1 &gt; X-Session-Id: 852910FE8FG64A18E17E146A9BD5917F
+1 &gt; X-Functionality: CREDITO_CONSUMO
+1 &gt; X-True-Client-Ip: 190.251.23.5
+1 &gt; X-Date-Time: 2006-01-02T15:04:05-00:00
+1 &gt; X-Trace-Id: 32d440a3-f7cb-4dcf-8b18-2493e206ab61
+1 &gt; X-App-Version: 1.15.0
+1 &gt; X-App-Platform: Android OS
+1 &gt; X-Customer-Hash: CL_RUT_b1CCee99996d0b84ab1a23279c6ee411960ec9809f6169dbc1b081614a94511C
+1 &gt; X-Forwarded-Proto: https
+1 &gt; X-Forwarded-For: 190.251.23.5,10.185.125.31
+1 &gt; X-Forwarded-Host: gateway-api-cl-gcp-sawest-1-preprod-chile-xzcfss.bfcl-np-gcp-alfa-sawest1-prod.fif.tech
+1 &gt; X-Forwarded-Port: 443
+1 &gt; X-Request-Id: 88eb4ad4-e4c6-4d87-9209-4e107fddeabe
+1 &gt; X-Branch: 170
+1 &gt; X-Customer-Id: 115946145
+1 &gt; Authorization: Bearer null
+1 &gt; Host: integracion-bfcl-qa.fif.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+06:31:54.995 response time in milliseconds: 126
+1 &lt; 401
+1 &lt; Date: Thu, 26 Mar 2026 11:31:58 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 116
+1 &lt; Connection: keep-alive
+1 &lt; www-authenticate: Bearer realm=&quot;null&quot;,error=&quot;invalid_token&quot;,error_description=&quot;keymanagement.service.invalid_access_token: Invalid Access Token&quot;
+1 &lt; x-frame-options: DENY
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; access-control-allow-origin: *
+1 &lt; content-security-policy: frame-ancestors &#39;none&#39;
+1 &lt; x-request-id: 88eb4ad4-e4c6-4d87-9209-4e107fddeabe
+1 &lt; set-cookie: __cf_bm=EQaXk0JENGArB_QaOFcoY4U4aSoN8nmCCV6m4_bIDlM-1774524718.854725-1.0.1.1-YV6N1b25yMI16mSbGEuuqsGXYUE4jSXHMDEtvGR5ukJFsR826jJVvfLTVh0D_uXWkBCJVQG0y7p.u2lkpPZiSysN3j__onD8hsFUWFF.5dWMX9aruIpfZA5ztIB0pfCC7WldQkgdJsYACjjGrFSb_Q; HttpOnly; Secure; Path=/; Domain=fif.tech; Expires=Thu, 26 Mar 2026 12:01:58 GMT
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 9e25d504d885c2cc-LIM
+1 &lt; Set-Cookie: __cf_bm=EQaXk0JENGArB_QaOFcoY4U4aSoN8nmCCV6m4_bIDlM-1774524718.854725-1.0.1.1-YV6N1b25yMI16mSbGEuuqsGXYUE4jSXHMDEtvGR5ukJFsR826jJVvfLTVh0D_uXWkBCJVQG0y7p.u2lkpPZiSysN3j__onD8hsFUWFF.5dWMX9aruIpfZA5ztIB0pfCC7WldQkgdJsYACjjGrFSb_Q; HttpOnly; Secure; Path=/; Domain=fif.tech; Expires=Thu, 26 Mar 2026 12:01:58 GMT
+{&quot;fault&quot;:{&quot;faultstring&quot;:&quot;Invalid Access Token&quot;,&quot;detail&quot;:{&quot;errorcode&quot;:&quot;keymanagement.service.invalid_access_token&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">06:31:55.003 classpath:features/anyPersonalLoansLimits.feature:18
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 126, url: https://integracion-bfcl-qa.fif.tech/parameters-management/v1/loans/limits?Type=2001, response: 
+{&quot;fault&quot;:{&quot;faultstring&quot;:&quot;Invalid Access Token&quot;,&quot;detail&quot;:{&quot;errorcode&quot;:&quot;keymanagement.service.invalid_access_token&quot;}}}
+classpath:features/anyPersonalLoansLimits.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

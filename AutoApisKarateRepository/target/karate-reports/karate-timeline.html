@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/actualizar[1.1:27]","start":1774526087424,"end":1774526088353,"title":"features\/actualizar[1.1:27] 06:54:47.424-06:54:48.353 ObtenerUsuarioPorId","className":"failed"},{"id":2,"group":1,"content":"features\/buscarUsuario[1.1:17]","start":1774526088682,"end":1774526089224,"title":"features\/buscarUsuario[1.1:17] 06:54:48.682-06:54:49.224 ObtenerUsuarioPorId"},{"id":3,"group":1,"content":"features\/delete[1.1:18]","start":1774526089279,"end":1774526089810,"title":"features\/delete[1.1:18] 06:54:49.279-06:54:49.810 ObtenerUsuarioPorId"},{"id":4,"group":1,"content":"features\/getTokenAuth[1.1:17]","start":1774526089858,"end":1774526090401,"title":"features\/getTokenAuth[1.1:17] 06:54:49.858-06:54:50.401 Obtener Token Exitosamente","className":"failed"},{"id":5,"group":1,"content":"features\/registro[1.1:17]","start":1774526090474,"end":1774526090983,"title":"features\/registro[1.1:17] 06:54:50.474-06:54:50.983 CreaUsuario"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

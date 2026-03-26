@@ -1,0 +1,9 @@
+function() {
+  return {
+    nome: '#string',
+    email: '#string',
+    password: '#string',
+    administrador: '#string',
+    _id: '#string'
+  };
+}
